@@ -1,0 +1,59 @@
+<form style="border-radius:5px;border:1px solid red;width:300px;">
+<fieldset style="border-radius:5px;border:1px solid red;width:300px;">
+
+<ul>
+    <li>
+	   <lable for="email">Email</lable>
+	   <input required type="email" id="email" name="email"/>
+	</li>
+    <li>
+	   <lable for="tel">Telephone Number</lable>
+	   <input required type="tel" id="tel" name="tel"/>
+	</li>	
+    <li>
+	   <lable for="url">Website</lable>
+	   <input required type="url" id="url" name="url"/>
+	</li>	
+</ul>	
+<input type="submit" value="Submit this">
+</fieldset>
+</form>
+
+
+<form role="search">
+<lable for="search">Search term</lable>
+<input required type="search" result="5"  id="search" name="search"/>
+<input type="submit" value="Go">
+</form>
+
+<form>
+<lable for="Date">Date</lable>
+<input required type="datetime-local"  id="datetime" name="date1"/>
+<input type="submit" value="Go">
+</form>
+
+<form>
+<input MIN="0"  max="10" step="0.5" required type="number"  id="number" name="number"/>
+<input type="submit" value="Go">
+</form>
+
+<form>
+<input MIN="0"  max="10" step="0.5" required type="range"  id="range" name="range"/>
+<output onformclick="value=range.value"> </output>
+<input type="submit" value="Go"  onclick="alert(range.value);">
+
+</form>
+
+<form>
+<input  required type="color"  id="color" name="color"/>
+
+<input list="sportlist" type="text" id="sport" name="sport"/>
+<datalist id="sportlist">
+<option label="Base1" value="base1"/>
+<option label="Base2" value="base2"/>
+<option label="Base3" value="base3"/>
+<option label="Base4" value="base4"/>
+<option label="Base5" value="base5"/>
+</datalist>
+<input type="submit" value="Go"  onclick="alert(range.value);">
+</form>
